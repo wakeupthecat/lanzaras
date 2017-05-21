@@ -26,13 +26,14 @@ For example, suppose we want to associate the extension "gast" with the command
 
    3) create in the same directory the lanzaras.gast.rule with the content
    
-         @java -jar $gastona.jar
+         @java.exe -jar $gastona.jar
          
 we exclude the final parameter since this is always the file that we want to launch.
-characters @ and $ have following meaning 
+
+Here the characters @ and $ have following meaning 
    
-       @program
-           will search for the first path in the environmen variable PATH where the file "program" or "program.exe" 
+       @program.exe
+           will search for the first path in the environmen variable PATH where the file "program.exe"
            is found and then it will be replaced by "path from env\program" including the double quotes
 
        $file
